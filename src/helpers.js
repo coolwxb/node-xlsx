@@ -45,7 +45,6 @@ const buildSheetFromMatrix = (data, options = {}) => {
       }
       if (isNumber(cell.z)) cell.z = XLSX.SSF._table[cell.z]; // eslint-disable-line 
       cell.s = { alignment: { horizontal: "center", vertical: "center" } };
-      no-underscore-dangle
       workSheet[cellRef] = cell;
     }
   }
