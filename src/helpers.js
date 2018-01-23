@@ -44,7 +44,7 @@ const buildSheetFromMatrix = (data, options = {}) => {
         cell.t = 's';
       }
       if (isNumber(cell.z)) cell.z = XLSX.SSF._table[cell.z]; // eslint-disable-line 
-      cell.s = { alignment: { horizontal: "center", vertical: "center" } };
+      cell.s = {alignment: {horizontal: 'center', vertical: 'center'}};
       workSheet[cellRef] = cell;
     }
   }
