@@ -13,7 +13,7 @@ const buildExcelDate = (value, is1904) => {
   return (epoch - originDate) / (864e5);
 };
 
-const buildSheetFromMatrix = (data, options = {}) => {
+const buildSheetFromMatrix = (data, options) => {
   const workSheet = {};
   const range = {s: {c: 1e7, r: 1e7}, e: {c: 0, r: 0}};
 
